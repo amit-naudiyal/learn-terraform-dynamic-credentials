@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
 
   lifecycle {
     ignore_changes = [
-      tags["CR_Ref"], tags["Opportunity_no", tags["aws-default-tags"]]
+      tags["CR_Ref"], tags["Opportunity_no"], tags["aws-default-tags"]
     ]
   }
 
